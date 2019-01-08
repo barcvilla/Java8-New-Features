@@ -17,8 +17,9 @@ public class LambdaTest
          * Los lambda con multiples parametros se separan con una coma (,)
          * Mediante el type inference el compilador puede reconocer el tipo de datos del parametro
          */
-        MathOperations addope = (a, b) -> System.out.println("La suma es: " + (a + b));
+        MathOperations addope = (a, b) -> System.out.println("La suma es: " + (a + b)); // lambda implementation
         addope.add(5, 5);
+        addope.add(100, 100);
     }
     
     public static void printLength(String msg)
@@ -28,12 +29,13 @@ public class LambdaTest
          * Si la expresion lambda contiene una sola linea las llaves son opcionales.
          * Si la expresion Lambda retrna un valor, return keyword puede ser omitido
          */
-        StringOperations str = text -> text.length();
-        System.out.println(str.getLength(msg));
+        StringOperations str = text -> text.length(); // lambda implementation
+        System.out.println("Lenght del texto es: " + str.getLength(msg));
     }
     
     public static void main(String[] args) {
         suma();
         printLength("hello");
+        printLength("using lambdas");
     }
 }
