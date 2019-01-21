@@ -8,7 +8,7 @@ package ch02.lambda.ex5.treeset.nolambda;
 import java.util.TreeSet;
 
 /**
- *
+ * Por defecto TreeSet contiene una lista ordenada de forma ascendente.
  * @author PC
  */
 public class TreeSetTest {

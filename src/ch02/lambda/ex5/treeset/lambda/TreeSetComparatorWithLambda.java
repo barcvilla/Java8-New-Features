@@ -5,7 +5,6 @@
  */
 package ch02.lambda.ex5.treeset.lambda;
 
-import java.util.Collections;
 import java.util.TreeSet;
 
 /**
