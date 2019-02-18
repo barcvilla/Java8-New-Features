@@ -26,6 +26,7 @@ public class Test {
         list.add(e1);
         list.add(e2);
         
+        
         System.out.println(list);
     }
 }
