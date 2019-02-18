@@ -8,7 +8,7 @@ package ch06.predifined.functionalinterface.predicate;
 import java.util.function.Predicate;
 
 /**
- *
+ * Predicate: Es una verificacion de una condicion que puede retornar true or false
  * @author PC
  */
 public class PredicateTest1 {
