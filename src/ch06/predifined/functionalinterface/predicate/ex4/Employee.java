@@ -5,6 +5,8 @@
  */
 package ch06.predifined.functionalinterface.predicate.ex4;
 
+import java.util.Objects;
+
 /**
  *
  * @author PC
@@ -55,6 +57,44 @@ public class Employee {
     public void setCity(String city) {
         this.city = city;
     }
+
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 47 * hash + Objects.hashCode(this.name);
+        hash = 47 * hash + Objects.hashCode(this.designation);
+        hash = 47 * hash + (int) (Double.doubleToLongBits(this.salary) ^ (Double.doubleToLongBits(this.salary) >>> 32));
+        hash = 47 * hash + Objects.hashCode(this.city);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Employee other = (Employee) obj;
+        if (Double.doubleToLongBits(this.salary) != Double.doubleToLongBits(other.salary)) {
+            return false;
+        }
+        if (!Objects.equals(this.name, other.name)) {
+            return false;
+        }
+        if (!Objects.equals(this.designation, other.designation)) {
+            return false;
+        }
+        if (!Objects.equals(this.city, other.city)) {
+            return false;
+        }
+        return true;
+    }
+    
 
     @Override
     public String toString() {
