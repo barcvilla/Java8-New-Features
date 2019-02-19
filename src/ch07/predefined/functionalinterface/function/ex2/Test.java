@@ -50,5 +50,10 @@ public class Test
                 return "E[Failed]";
             }
         };
+        
+        for(Student s : l)
+        {
+            System.out.println("Studen Name: " + s.getName() + " Mark: " + f.apply(s));
+        }
     }
 }
