@@ -29,10 +29,23 @@ public class Test {
         System.out.println("The random name is: " + s.get());
     }
     
+    private static void getRandomOTP()
+    {
+        Supplier<String> s = () -> {
+            String otp = "";
+            for(int i = 0; i < 6; i++)
+            {
+                otp = otp + (int)(Math.random() * 10); //get 0 to 9 random number
+            }
+            return otp;
+        };
+        System.out.println("Random OTP: " + s.get());
+    }
+    
     public static void main(String[] args) 
     {
         getDate();
         getRandomName();
-        getRandomName();
+        getRandomOTP();
     }
 }
