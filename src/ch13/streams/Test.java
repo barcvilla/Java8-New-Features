@@ -11,7 +11,10 @@ import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 /**
- *
+ * Filtering Stream: Si queremos filtrar elementos de una coleccion basados en una condicion booleana debemos usar filter()
+ * de la interface stream
+ * Mapping Stream: Si queremos crear un nuevo objeto separado para cada objeto presente en la coleccion basados en una funcion
+ * entonces debemos utilizar map() de la interface stream
  * @author PC
  */
 public class Test {
