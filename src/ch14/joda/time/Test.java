@@ -6,6 +6,7 @@
 package ch14.joda.time;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
 
 /**
@@ -17,6 +18,60 @@ public class Test {
     static int dd,mm,yy,h,m,s,n;
     static LocalDate date = LocalDate.now();
     static LocalTime time = LocalTime.now();
+    static LocalDateTime dateTime = LocalDateTime.now();
+    
+    public static void getLocalDateTime()
+    {
+        System.out.println("\nUSING LocalDateTime Class");
+        System.out.println("==========================");
+        System.out.println("La fecha y hora actual: " + dateTime);
+    }
+    
+    public static void getDayOfMonthInLocalDateTime()
+    {
+        int dd = dateTime.getDayOfMonth();
+        System.out.println("Dia del mes " + dd);
+    }
+    
+    public static void getMonthInLocalDateTime()
+    {
+        int mm = dateTime.getMonthValue();
+        System.out.println("Mes: " + mm);
+    }
+    
+    public static void getYearInLocalDateTime()
+    {
+        int yy = dateTime.getYear();
+        System.out.println("Year: " + yy);
+    }
+    
+    public static void getDateInLocalDateTime()
+    {
+        System.out.printf("Complete Date: %d - %d - %d\n", dd, mm, yy);
+    }
+    
+    public static void getHourInLocalDateTime()
+    {
+        int h = dateTime.getHour();
+        System.out.println("Hour: " + h);
+    }
+    
+    public static void getMinuteInLocalDateTime()
+    {
+        int m = dateTime.getMinute();
+        System.out.println("Minute: " + m);
+    }
+    
+    public static void getNanoInLocalDateTime()
+    {
+        int n = dateTime.getNano();
+        System.out.println("Nano: " + n);
+    }
+    
+    public static void getTimeInLocalDateTime()
+    {
+        System.out.printf("%d - %d - %d\n", h, m, n);
+    }
     
     public static void getLocalDate()
     {
@@ -95,5 +150,14 @@ public class Test {
         getSecondsTime();
         getNanoSecondsTime();
         formatTime();
+        getLocalDateTime();
+        getDayOfMonthInLocalDateTime();
+        getMonthInLocalDateTime();
+        getYearInLocalDateTime();
+        getDateInLocalDateTime();
+        getHourInLocalDateTime();
+        getMinuteInLocalDateTime();
+        getNanoInLocalDateTime();
+        getTimeInLocalDateTime();
     }
 }
