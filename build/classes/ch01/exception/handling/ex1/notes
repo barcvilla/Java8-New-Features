@@ -1,0 +1,6 @@
+Exception: Es un evento inesperado que sucede en el flujo de ejecucion de nuestro programa.
+Exception Handling: Tiene como objetivo proporcionar una buena terminacion de nuestro programa.
+
+* Cada programa en java tiene por lo menos 1 thread (main thread)
+* Por cada thread jvm crea un Runtime Stack
+
