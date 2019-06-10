@@ -1,0 +1,68 @@
+Java FileInputStream
+
+Es una clase utilizada para leer datos en forma de bytes desde un archivo.
+Es una clase utilizada para leer datos orientados a bytes como audio, video, imagen etc.
+
+
+Java BufferedInputStream
+
+Es una clase utilizada para leer datos en forma de stream
+Internamente utiliza un mecanismo buffer para realizar un desempeno rapido.
+
+Java SequenceInputStream
+
+Es una clase utilizada para leer datos desde multiples streams
+Esta clase leen los datos secuenciales
+
+Java FileWriter
+
+Es una clase utilizada para escribir datos orientado caracteres a un archivo
+A diferencia de la clase FileOutputStream, no necesitamos convertir string en byte array ya que provee metodos
+para escribir directamente.
+
+Java BufferedWriter
+
+Es una clase utilizada para proveer buffering para una instancia de una clase Writer
+Esta clase hace el performance mucho mas rapido
+
+Java ByteArrayOutputStream
+
+Es una clase utilizada para escribir datos comunes en multiples archivos
+Esta clase toma una copia y lo envia a multiples streams
+
+Java InputStream vs Reader
+
+Ambas clases InputStream y Reader son abstracciones para leer datos desde una fuente
+La fuente puede ser una instancia File o Socket
+InputStream es utilizado para leer binary data
+Reader es utilizado para leer datos.
+
+Binary vs Text data
+
+Todo lo que leemos es en forma de bytes
+Para convertir byte a texto Java utiliza algunos character encoding and decoding schemes
+
+FileReader vs FileInputStream
+
+FileInputStream es utilizada para leer raw streams de bytes desde un archivo o socket en Java
+Este lee desde un archivo byte por byte cuando se llama al metodo .read()
+Es muy util cuando leemos imagenes audio y video
+
+Java DataOutputStream
+
+Esta clase es utilizada para escribir tipos de datos primitivos a un output stream en una forma independiente de la maquina
+
+Java DataInputStream
+
+Esta clase es utilizada para leer tipos de datos primitivos desde un input stream en un forma independiente de la maquina
+
+Java FileReader vs FileInputStream
+
+FileReader extiende InputStreamReader, este utiliza character encoding provisto a la clase o utiliza el por defecto
+Esta clase lee cada caracter del archivo
+Es utilizado para read stream de caracteres o texto de archivos y siempre especificando el character encoding
+Si no se especifica el character encoding algunos datos podrian perderse en el procesamiento
+
+FileInputStream lee raw stream de bytes desde un archivo o socket
+Lee de un archivo byte por byte cuando llamamos al metodo call()
+es muy util cuando queremos leer un archivo de imagen, audio o video

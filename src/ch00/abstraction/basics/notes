@@ -1,0 +1,16 @@
+Abstraccion:
+
+La abstraccion significa ocultar los detalles de bajo nivel, y exponer solo los detalles esenciales y relevantes al usuario.
+
+Ejemplos del mundo real:
+
+1. Consideremos un Car, el cual abstrae detalles internos y expone al conductor solo aquellos detalles que son relevantes
+   a la interaccion del conductor con el Car
+
+2. Considere un Cajero automatico, todas las operaciones realizadas en este cajero automatico como: retiro, transferencia etc
+   estas las realizamos pero no conocemos los detalles internos.
+
+3. Considere el ultimo ejemplo, nunca compramos un "dispositivo", pero siempre compramos algo mas especifico un IPhone,
+   Nokia 3310 etc, aqui el iPhone y el Nokia son cosas concretas, el dispositivo es abstracto.
+
+
