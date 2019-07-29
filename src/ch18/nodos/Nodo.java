@@ -17,6 +17,7 @@ public class Nodo {
     public Nodo(int d)
     {
         dato = d;
+        ref = null;
     }
 
     public int getDato() {
