@@ -5,12 +5,15 @@
  */
 package ch18.nodos;
 
+import java.util.List;
+
 /**
  *
  * @author PC
  */
 public class ListaEnlazada {
     protected Nodo primero;
+    
     
     public ListaEnlazada()
     {
@@ -52,8 +55,17 @@ public class ListaEnlazada {
     /*
     * Metodo buscar un nodo en la lista
     */
-    public void buscar()
+    public Nodo buscar(int dato)
     {
+        Nodo nodob;
+        for(nodob = primero; nodob != null; nodob = nodob.getRef())
+        {
+            if(dato == nodob.dato)
+            {
+                return nodob;
+            }
+        }
+        return null;
     }
     
     /*
